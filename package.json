@@ -1,6 +1,6 @@
 {
   "name": "rollup_vue_lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "rollup 构建基于vue的ui组件库demo",
   "main": "lib/index.cjs.js",
