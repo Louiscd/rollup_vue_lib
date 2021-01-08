@@ -1,9 +1,25 @@
 {
-  "name": "rollup_vue_lib_demo",
+  "name": "rollup_vue_lib",
   "version": "1.0.0",
+  "private": false,
   "description": "rollup 构建基于vue的ui组件库demo",
   "main": "lib/index.umd.js",
   "module": "lib/index.es.js",
+  "keyword": [
+    "vue",
+    "element-ui",
+    "rollup",
+    "edit-table",
+    "table-list",
+    "form"
+  ],
+  "author": "louiscd@126.com",
+  "homepage": "https://github.com/Louiscd/rollup_vue_lib.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Louiscd/rollup_vue_lib.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "rimraf ./lib && rollup -c --watch --environment NODE_ENV:development",
     "build": "rimraf ./lib && rollup --c --environment NODE_ENV:production",
@@ -31,7 +47,10 @@
     "sass": "^1.29.0"
   },
   "dependencies": {},
-  "files": [
-    "lib"
+  "files": [],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
   ]
 }
