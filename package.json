@@ -48,7 +48,9 @@
     "sass": "^1.29.0"
   },
   "dependencies": {},
-  "files": [],
+  "files": [
+    "lib"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
