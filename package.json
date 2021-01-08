@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": false,
   "description": "rollup 构建基于vue的ui组件库demo",
-  "main": "lib/index.umd.js",
-  "module": "lib/index.es.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.js",
   "keyword": [
     "vue",
     "element-ui",
