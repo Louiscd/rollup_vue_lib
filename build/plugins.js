@@ -4,7 +4,7 @@ const vue = require('rollup-plugin-vue') // 处理vue文件
 const babel = require('rollup-plugin-babel') // rollup 的 babel 插件，ES6转ES5
 const commonjs = require('rollup-plugin-commonjs') // 将CommonJS模块转换为 ES2015 供 Rollup 处理
 const postcss = require('rollup-plugin-postcss')
-import cssnano from 'cssnano'
+const cssnano = require('cssnano')
 
 const { terser } = require('rollup-plugin-terser')
 
@@ -14,7 +14,7 @@ const isProd = process.env.NODE_ENV == 'production'
 const basePlugins = [
   resolve(),
   json(),
-  vue(),
+  vue({ css: false }),
   babel({
     exclude: 'node_modules/**', // 防止打包node_modules下的文件
     runtimeHelpers: true, // 使plugin-transform-runtime生效

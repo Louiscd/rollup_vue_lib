@@ -9,14 +9,15 @@ import formCreate from '@form-create/element-ui'
 Vue.use(formCreate)
 
 // 全部导入组件库
-// import Awesome from '../../packages/index'
-// Vue.use(Awesome)
+import Awesome from '../../lib/index'
+import '../../lib/theme/index.css'
+Vue.use(Awesome)
 
 // 按需加载
-import EditTable from '../../packages/edit-table/index'
-import AwesomeTableList from '../../packages/table-list/index'
-Vue.use(EditTable)
-Vue.use(AwesomeTableList)
+// import EditTable from '../../lib/edit-table/index'
+// import AwesomeTableList from '../../lib/table-list/index'
+// Vue.use(EditTable)
+// Vue.use(AwesomeTableList)
 
 Vue.config.productionTip = false
 
