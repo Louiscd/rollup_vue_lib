@@ -19,7 +19,7 @@ files.forEach((file) => {
 const packagesConfig = componentFileNames.map((item) => {
   return {
     input: `packages/${item}/index.js`,
-    output: [{ file: `lib/${item}/index.js`, format: 'es', name: `${item}` }],
+    output: [{ file: `lib/${item}.js`, format: 'cjs', name: `${item}` }],
     plugins, // 输出
     external: ['vue', '@form-create/element-ui'], // 外部依赖
   }
