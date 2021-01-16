@@ -51,7 +51,10 @@
     "vue-template-compiler": "^2.6.10",
     "sass": "^1.29.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "echarts": "^5.0.0",
+    "resize-detector": "^0.2.2"
+  },
   "files": [
     "lib"
   ],

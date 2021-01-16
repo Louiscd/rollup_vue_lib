@@ -21,7 +21,7 @@ const packagesConfig = componentFileNames.map((item) => {
     input: `packages/${item}/index.js`,
     output: [{ file: `lib/${item}.js`, format: 'cjs', name: `${item}` }],
     plugins, // 输出
-    external: ['vue', '@form-create/element-ui'], // 外部依赖
+    external: ['vue', 'echarts', '@form-create/element-ui'], // 外部依赖
   }
 })
 
