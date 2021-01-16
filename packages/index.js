@@ -3,7 +3,7 @@ import EditTable from '../packages/edit-table/index.js';
 import Chart from '../packages/chart/index.js';
 import SegmentLayout from '../packages/segment-layout/index.js';
 import StatisticsLayout from '../packages/statistics-layout/index.js';
-import ToolPanelExpandLayout from '../packages/toolPanel-expand-layout/index.js';
+import ToolPanelExpandLayout from '../packages/tool-panel-expand-layout/index.js';
 
 // 存储组件列表
 const components = [
