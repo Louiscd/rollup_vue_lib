@@ -14,8 +14,8 @@ import '../../lib/theme/index.css'
 Vue.use(Awesome)
 
 // 按需加载
-// import EditTable from '../../lib/edit-table/index'
-// import AwesomeTableList from '../../lib/table-list/index'
+// import EditTable from '../../lib/edit-table'
+// import AwesomeTableList from '../../lib/table-list'
 // Vue.use(EditTable)
 // Vue.use(AwesomeTableList)
 

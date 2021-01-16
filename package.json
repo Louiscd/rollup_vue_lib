@@ -1,6 +1,6 @@
 {
   "name": "rollup_vue_lib",
-  "version": "1.0.8",
+  "version": "1.1.1",
   "private": false,
   "description": "rollup 构建基于vue的ui组件库demo",
   "main": "lib/index.cjs.js",
@@ -51,7 +51,10 @@
     "vue-template-compiler": "^2.6.10",
     "sass": "^1.29.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "echarts": "^5.0.0",
+    "resize-detector": "^0.2.2"
+  },
   "files": [
     "lib"
   ],

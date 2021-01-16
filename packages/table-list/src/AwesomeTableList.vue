@@ -59,6 +59,7 @@
     </section>
   </div>
 </template>
+
 <script>
 export default {
   name: 'AwesomeTableList',
@@ -72,7 +73,7 @@ export default {
     formRules: {
       required: true,
       type: Array,
-      default: () => [],
+      default: () => []
     },
     formOptions: {
       required: false,
@@ -82,101 +83,101 @@ export default {
           form: {
             inline: true,
             labelPosition: 'left',
-            labelWidth: '100px',
+            labelWidth: '100px'
           },
           submitBtn: {
-            show: false,
-          }, // 默认隐藏form-create 自带的提交按钮
-        }
-      },
+            show: false
+          } // 默认隐藏form-create 自带的提交按钮
+        };
+      }
     },
 
     /** 是否显示列表统计 */
     isShowStatistics: {
       required: false,
       type: Boolean,
-      default: true,
+      default: true
     },
 
     /** 表格相关 */
     selection: {
       required: false,
       type: Boolean,
-      default: false,
+      default: false
     },
     tableData: {
       required: true,
       type: Array,
-      default: () => [],
+      default: () => []
     },
     columns: {
       required: true,
       type: Array,
-      default: () => [],
+      default: () => []
     },
 
     /** 分页参数 */
     pageNo: {
       required: false,
       type: Number,
-      default: 1,
+      default: 1
     },
     pageSize: {
       required: false,
       type: Number,
-      default: 10,
+      default: 10
     },
     count: {
       required: true,
       type: Number,
-      default: 0,
-    },
+      default: 0
+    }
   },
   data() {
     return {
-      fApi: {},
-    }
+      fApi: {}
+    };
   },
   computed: {
     _pageNo() {
-      return this.pageNo
-    },
+      return this.pageNo;
+    }
   },
   created() {},
   methods: {
     // 查询
     _handleSearch() {
-      this.$emit('handle-search', this.getCurrentFormData())
+      this.$emit('handle-search', this.getCurrentFormData());
     },
     // 重置
     _handleReset() {
-      this.fApi.resetFields() // 清空表单数据 ，实时数据清空，上一次数据依然保留
-      this.$emit('reset-search', this.getCurrentFormData())
+      this.fApi.resetFields(); // 清空表单数据 ，实时数据清空，上一次数据依然保留
+      this.$emit('reset-search', this.getCurrentFormData());
     },
     // 分页
     _handleCurrentChange(pageNo) {
       this.$emit('page-change', {
         pageNo,
-        formData: this.getLastFormData(),
-      })
+        formData: this.getLastFormData()
+      });
     },
     // 获取form 实时数据
     getCurrentFormData() {
-      return this.fApi.form
+      return this.fApi.form;
     },
     // 获取form 上一次数据
     getLastFormData() {
-      return this.fApi.formData()
+      return this.fApi.formData();
     },
     // 获取form-create 的实例对象
     getFApi() {
-      return this.fApi
-    },
-  },
-}
+      return this.fApi;
+    }
+  }
+};
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss">
 /* ------------------工具栏toolbar------------------- */
 .toolbar-panel .toolbar-item {
   display: inline-block;
