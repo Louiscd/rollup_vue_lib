@@ -52,7 +52,7 @@
     "sass": "^1.29.0"
   },
   "dependencies": {
-    "echarts": "^5.0.0",
+    "echarts": "^5.0.1",
     "resize-detector": "^0.2.2"
   },
   "files": [
